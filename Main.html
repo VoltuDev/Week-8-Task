@@ -1,0 +1,29 @@
+<head>
+    <title>I am Awesome!</title>
+    <style>
+      body {
+        text-align: center;
+        padding-top: 50px;
+      }
+      #output {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="awesome_button">I am awesome!</button>
+    <div id="output">
+    </div>
+    <script>
+      var button = document.getElementById("awesome_button");
+      var output = document.getElementById("output");
+      button.onclick = function() {
+        var message = "";
+        for (var i = 0; i < 10; i++) {
+          message += "I am awesome!<br>";
+        }
+        output.innerHTML = message;
+      }
+    </script>
+  </body>
+  </html>
